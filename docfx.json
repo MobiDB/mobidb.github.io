@@ -61,7 +61,7 @@
     ],
     "dest": "_site",
 	"globalMetadata": {
-       "_disableContribution": true,
+       "_disableContribution": false,
        "_enableSearch": true,
        "_disableBreadcrumb": true
     }, 
