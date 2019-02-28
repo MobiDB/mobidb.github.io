@@ -1,0 +1,76 @@
+- name: Getting started
+  href: index.md
+- name: Form designer
+  href: form_designer.md
+- name: Field types
+  items:
+  - name: Basic types
+    href: field_types/basic_types.md
+  - name: Table relations set up
+    href: field_types/table_rel.md
+  - name: Filtered dropdown lists set up
+    href: field_types/filtered_dropdown.md
+  - name: Nested table (one to many relation, master-detail)
+    href: field_types/nested_table.md
+  - name: Calculable expressions
+    items:
+    - name: Calculable expressions
+      href: field_types/use_exp.md
+    - name: Time difference calculation
+      href: field_types/calc_time.md
+    - name: Invisible calculable variables
+      href: field_types/calc_exp.md
+- name: Synchronization and backups
+  items:
+  - name: Synchronization set up
+    href: synchronization_and_backups/sync.md
+  - name: Multi-user access
+    href: synchronization_and_backups/share_multi.md
+  - name: Backup/Restore database
+    href: synchronization_and_backups/backup_restore.md
+- name: Import/Export
+  items:
+  - name: PDF export
+    href: import_export/pdf_export.md
+  - name: CSV import
+    href: import_export/csv_import.md
+  - name: Import with files/images
+    href: import_export/import_with_images.md
+  - name: Import data from MS Access
+    href: import_export/import_access.md
+- name: Hotkeys
+  href: hotkeys.md
+- name: User interface localization
+  href: localizeUI.md
+- name: Licensing and registration
+  items:
+  - name: Licensing and registration
+    href: licensing/licensing.md
+  - name: Grant licenses
+    href: licensing/grant_license.md
+  - name: Login to MobiDB
+    href: licensing/login.md
+- name: How to
+  items:
+  - name: Accumulated balance set up
+    href: howto/acc_balance.md
+  - name: Duplicate database structure
+    href: howto/database_dup.md
+  - name: Stored filters
+    href: howto/save_filters.md
+  - name: Android 4.4 SD Card workaround
+    href: howto/kitkat.md
+  - name: App Version
+    href: howto/app_version.md
+  - name: Shortcut creation
+    href: howto/shortcut_links.md
+- name: Troubleshooting
+  items:
+  - name: Save data from Dropbox
+    href: troubleshoot/howto_dbox.md
+  - name: Sync issues troubleshooting
+    href: troubleshoot/howto_sync_issue.md
+  - name: How to use Databases Extractor
+    href: troubleshoot/howto_extract.md
+- name: End-user license agreement
+  href: EULA.md
