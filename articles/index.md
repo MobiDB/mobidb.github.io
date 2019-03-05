@@ -6,7 +6,6 @@ At times, we need to keep track of information and a good choice for this is usi
 
 <iframe width="300px" height="546px" src="https://www.youtube.com/embed/fAwBzNoSBt4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
 ### Step 1. Creating database
 
 To create a database tap on the **Add** <img src="../images/getting_started/ios_plus.png" style="width:30px"/> icon at the bottom left corner of the main screen and select **Create new database** option.
@@ -118,6 +117,9 @@ Use swipe gesture to flip records.
 
 
 ## Android
+
+<iframe width="300px" height="533px" src="https://youtu.be/ahwY9N4smZQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 ### Step 1.  Creating database
 
