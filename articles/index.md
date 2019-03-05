@@ -118,7 +118,7 @@ Use swipe gesture to flip records.
 
 ## Android
 
-<iframe width="300px" height="533px" src="https://youtu.be/ahwY9N4smZQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="300px" height="533px" src="https://www.youtube.com/embed/ahwY9N4smZQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ### Step 1.  Creating database
