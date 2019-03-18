@@ -294,8 +294,7 @@ Below, you can find more detailed description of all commands in alphabetical or
 
 ## Windows
 
-<iframe width="300px" height="233px" src="https://youtu.be/LHj8Ds9wg8o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<iframe width="300px" height="233px" src="https://www.youtube.com/embed/LHj8Ds9wg8o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Step 1.  Creating database
 
