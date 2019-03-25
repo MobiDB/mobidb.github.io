@@ -1,5 +1,15 @@
 # Getting started #
 
+In this article:
+
+[iOS](#ios)
+
+[Android](#android)
+
+[Windows](#windows)
+
+[Cloud sync](#synchronization)
+
 At times, we need to keep track of information and a good choice for this is using a MobiDB database application. MobiDB is good choice for keeping record of small business. It could be inventory management, keeping records of clients in medical organization, managing sport organizations, managing scientific records. or even a collection of your books and discs, or simply the database to store your personal contacts, a MobiDB makes it easy to enter, store, and find specific information. The following Getting Started guide is meant to describe the basic steps a user should take in order to get acquainted with the application capabilities.
 
 ## iOS
