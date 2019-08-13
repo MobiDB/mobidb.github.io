@@ -20,16 +20,16 @@ At times, we need to keep track of information and a good choice for this is usi
 
 To create a database tap on the **Add** <img src="../images/getting_started/ios_plus.png" style="width:30px"/> icon at the bottom left corner of the main screen and select **Create new database** option.
 
-<img src="../images/getting_started/ios_add_db.png" style="width:500px"/>
+<img src="../images/getting_started/ios_add_db.png" class="iphoneimg"/>
 
 
 The list of predefined templates will appear. To create new empty database choose **Blank**.
 
-<img src="../images/getting_started/ios_create_blank.png"  style="width:500px"/>
+<img src="../images/getting_started/ios_create_blank.png"  class="iphoneimg"/>
 
 Specify **Database name** and hit OK.
 
-<img src="../images/getting_started/ios_db_name.png"  style="width:500px"/>
+<img src="../images/getting_started/ios_db_name.png" class="iphoneimg"/>
 
 The new empty database will be created.
 
@@ -40,26 +40,26 @@ To create new table hit <img src="../images/getting_started/ios_plus.png" style=
 
 In the menu choose **Add new table**.
 
-<img src="../images/getting_started/ios_add_table.png" style="width:500px"/>
+<img src="../images/getting_started/ios_add_table.png" class="iphoneimg"/>
 
 Enter table name and hit **OK** to confirm:
 
-<img src="../images/getting_started/ios_table_name.png" style="width:500px"/>
+<img src="../images/getting_started/ios_table_name.png" class="iphoneimg"/>
 
 Once you confirm newly created table will be opened. Even though it's still empty.
 
-<img src="../images/getting_started/ios_empty_dataview.png" style="width:500px"/>
+<img src="../images/getting_started/ios_empty_dataview.png" class="iphoneimg"/>
 
 
 Open designer using **Designer** option of the ellipses button's <img src="../images/getting_started/ios_ellipses_button.png" style="width:30px"/> menu.
 
-<img src="../images/getting_started/ios_dataview_ellipses_menu.png" style="width:500px"/>
+<img src="../images/getting_started/ios_dataview_ellipses_menu.png" class="iphoneimg"/>
 
 ### Step 3. Creating form layout
 
 Form designer will appear.
 
-<img src="../images/getting_started/ios_form_designer.png" style="width:500px"/>
+<img src="../images/getting_started/ios_form_designer.png" class="iphoneimg"/>
 
 Let's assume we want to create table with the following fields:
 * ***Product name*** field of ***text*** type;
@@ -68,25 +68,25 @@ Let's assume we want to create table with the following fields:
 
 In order to add fields hit <img src="../images/getting_started/ios_plus.png" style="width:30px"/> button and select field you want to add.
 
-<img src="../images/getting_started/ios_toolbox.png" style="width:500px"/>
+<img src="../images/getting_started/ios_toolbox.png" class="iphoneimg"/>
 
 Once you add Text, Float and Picture field move them using drag and drop and change size with size grippers.
 
-<img src="../images/getting_started/ios_form_layout.png" style="width:500px"/>
+<img src="../images/getting_started/ios_form_layout.png" class="iphoneimg"/>
 
 Let's change fields' titles.
 In order to do that select element you want to edit and hit **Edit** button.
-<img src="../images/getting_started/ios_designer_edit_adorner.png" style="width:500px"/>
+<img src="../images/getting_started/ios_designer_edit_adorner.png" class="iphoneimg"/>
 
 Property editor will appear. Edit properties, in particular **Caption** property and hit **Save** button.
 
-<img src="../images/getting_started/ios_designer_property_editor.png" style="width:500px"/>
+<img src="../images/getting_started/ios_designer_property_editor.png" class="iphoneimg"/>
 
 
 Edit the rest of the fields in the similar manner.
 
 
-<img src="../images/getting_started/ios_designer_final_design.png" style="width:500px"/>
+<img src="../images/getting_started/ios_designer_final_design.png" class="iphoneimg"/>
 
 
 Hit apply <img src="../images/getting_started/ios_save_designer.png" style="width:30px"/> button to save form.
@@ -96,9 +96,9 @@ Hit apply <img src="../images/getting_started/ios_save_designer.png" style="widt
 
 You will see Data editor screen.
 
-<img src="../images/getting_started/ios_dataview.png" style="width:500px"/>
+<img src="../images/getting_started/ios_dataview.png" class="iphoneimg"/>
 
-Hit plus <img src="../images/getting_started/ios_plus.png" button style="width:30px"/> to add new row to the table.
+Hit plus <img src="../images/getting_started/ios_plus.png" style="width:30px"/> button to add new row to the table.
 
 There are two options to edit data.
 
@@ -106,24 +106,24 @@ When you need to modify one particular cell it's possible to edit value in the t
 
 Tap on the cell to select cell.
 
-<img src="../images/getting_started/ios_new_row.png" style="width:500px"/>
+<img src="../images/getting_started/ios_new_row.png" class="iphoneimg"/>
 
 Tap again on the selected field to display menu. Select edit in the menu.
 
-<img src="../images/getting_started/ios_table_edit_menu.png" style="width:500px"/>
+<img src="../images/getting_started/ios_table_edit_menu.png" class="iphoneimg"/>
 
 Edit data and hit **OK** to save data to selected cell.
 
-<img src="../images/getting_started/ios_table_editor.png" style="width:500px"/>
+<img src="../images/getting_started/ios_table_editor.png" class="iphoneimg"/>
 
 If you need to enter lots of data it's better to switch to **View and edit entries** mode.
 
-<img src="../images/getting_started/ios_edit_mode.png" style="width:500px"/>
+<img src="../images/getting_started/ios_edit_mode.png" class="iphoneimg"/>
 
 
 Use swipe gesture to flip records.
 
-<img src="../images/getting_started/ios_edit_data.png" style="width:500px"/>
+<img src="../images/getting_started/ios_edit_data.png" class="iphoneimg"/>
 
 
 ## Android
