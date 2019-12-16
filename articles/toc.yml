@@ -50,6 +50,8 @@
     href: licensing/grant_license.md
   - name: Login to MobiDB
     href: licensing/login.md
+  - name: Password restore
+    href: licensing/forgot_password.md
 - name: How to
   items:
   - name: Accumulated balance set up
