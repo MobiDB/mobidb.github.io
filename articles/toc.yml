@@ -66,6 +66,8 @@
     href: howto/app_version.md
   - name: Shortcut creation
     href: howto/shortcut_links.md
+  - name: Calculate age
+    href: howto/calculate_age.md
 - name: Troubleshooting
   items:
   - name: Save data from Dropbox
