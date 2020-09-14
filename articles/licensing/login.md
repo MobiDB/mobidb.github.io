@@ -7,9 +7,13 @@ Sign-in experience is a little bit different on windows 10 and on android. You c
 
 ## Android ##
 
-Open MobiDB Android and hit account button:
+Open MobiDB Android and hamburger button:
 
-<img src="../../images/login/a_login_mobidb.png" style="width:320px"/>
+<img src="../../images/login/a_hamburger.png" style="width:320px"/>
+
+Tap on the profile area:
+
+<img src="../../images/login/a_user_profile.png" style="width:320px"/>
 
 Choose Sign-in option:
 
