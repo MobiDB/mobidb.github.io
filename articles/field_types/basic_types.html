@@ -1,0 +1,440 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Basic field types and their properties </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Basic field types and their properties ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="https://mobidb.mobi">
+                <img id="logo" class="svg" src="../../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+              <h1 id="basic-field-types-and-their-properties">Basic field types and their properties</h1>
+              
+<h2 id="common-control-properties">Common control properties</h2>
+<p>There are several properties which works the same for almost all controls (exceptions are &quot;Nested table&quot; and Label control):</p>
+<blockquote><ul>
+<li><p><strong><em>Caption</em></strong> – sets name of a field visible on a form and in the table caption.</p>
+</li>
+<li><p><strong><em>Caption Format</em></strong> – sets Caption font family, size (in points) and style (<em>bold</em>, <em>italic</em>, <em>underline</em>).</p>
+</li>
+<li><p><strong><em>Name used in formulas</em></strong> – sets name of a field that is used to refer to this field in formulas.</p>
+</li>
+</ul>
+<div class="TIP"><h5>Tip</h5><p>We recommend giving meaningful and informative formula names. It will help you select the needed field name when writing expressions. For example, if your field is used to display product description, set name for formulas as <em>product_description</em>.</p>
+</div>
+</blockquote>
+<p>Another common property is &quot;Default value&quot;, which is available at some controls (it&#39;s mentioned if supported):</p>
+<blockquote><ul>
+<li><strong><em>Default value</em></strong> – the value which is used to automatically fill in control when new record is added.</li>
+</ul>
+</blockquote>
+<p>Text format defines text format for the textual controls (it&#39;s mentioned if supported):</p>
+<blockquote><ul>
+<li><strong><em>Text format</em></strong> - sets text font family, size (in points) and style (<em>bold</em>, <em>italic</em>).</li>
+</ul>
+</blockquote>
+<h2 id="string">String</h2>
+<p><img src="../../images/basic_types/text.png" style="width:180px"></p>
+<p>String is used to add text values to the database, for example names, products, description, services. Any text information can be added.</p>
+<p>The following string properties are available:</p>
+<blockquote><ul>
+<li><p><strong><em><a href="#common-control-properties">Common properties</a></em></strong></p>
+</li>
+<li><p><strong><em>Default value</em></strong> is supported</p>
+</li>
+<li><p><strong><em>Enable barcode input</em></strong> – if checked you will be able to scan barcodes to enter values in this field.</p>
+</li>
+<li><p><strong><em>Text format</em></strong> - sets text font family, size (in points) and style (<em>bold</em>, <em>italic</em>).</p>
+</li>
+</ul>
+</blockquote>
+<h2 id="label">Label</h2>
+<p><img src="../../images/basic_types/label.png" style="width:180px"></p>
+<p>Label is used to add text information that is equal for all entries in the database. It can be used to add a caption to the card, so that you are able to see what information you are going to add or edit. You can also use it to name some group of fields: contact information, product details, etc.</p>
+<p>The following Label properties are available:</p>
+<blockquote><ul>
+<li><p><strong><em>Text</em></strong> – sets text of a label displayed on a form.</p>
+</li>
+<li><p><strong><em>Alignment</em></strong> – sets text alignment in the control. (top left, top center, top right, center left, center, center right, bottom left, bottom center, bottom right).</p>
+</li>
+<li><p><strong><em>Text format</em></strong> – sets text font family, size (in points) and style (<em>bold</em>, <em>italic</em>, <em>underline</em>).</p>
+</li>
+</ul>
+</blockquote>
+<h2 id="float">Float</h2>
+<p><img src="../../images/basic_types/float.png" style="width:180px"></p>
+<p>Float is used to enter and display decimal numbers.</p>
+<p>The following Float properties are available:</p>
+<blockquote><ul>
+<li><p><strong><em><a href="#common-control-properties">Common properties</a></em></strong></p>
+</li>
+<li><p><strong><em>Default value</em></strong> is supported</p>
+</li>
+<li><p><strong><em>Text format</em></strong> - sets text font family, size (in points) and style (<em>bold</em>, <em>italic</em>).</p>
+</li>
+</ul>
+</blockquote>
+<h2 id="integer">Integer</h2>
+<p><img src="../../images/basic_types/integer.png" style="width:180px"></p>
+<p>Integer is used to enter and display integer values.</p>
+<p>The following Integer properties are available:</p>
+<blockquote><ul>
+<li><p><strong><em><a href="#common-control-properties">Common properties</a></em></strong></p>
+</li>
+<li><p><strong><em>Default value</em></strong> is supported</p>
+</li>
+</ul>
+</blockquote>
+<h2 id="bool">Bool</h2>
+<p><img src="../../images/basic_types/bool.png" style="width:180px"></p>
+<p>Bool (Boolean) is used to add checkboxes to a database. It has two states: checked and unchecked. This field can be edited from both card and table view.</p>
+<p>The following Bool properties are available:</p>
+<blockquote><ul>
+<li><p><strong><em><a href="#common-control-properties">Common properties</a></em></strong></p>
+</li>
+<li><p><strong><em>Default value</em></strong> is supported</p>
+</li>
+</ul>
+</blockquote>
+<h2 id="date">Date</h2>
+<p><img src="../../images/basic_types/date.png" style="width:180px"></p>
+<p>Date is used enter and display dates. A user is able to select some date by selecting it in the date picker.</p>
+<p>The following Date properties are available:</p>
+<blockquote><ul>
+<li><p><strong><em><a href="#common-control-properties">Common properties</a></em></strong></p>
+</li>
+<li><p><strong><em>Default value</em></strong> is supported</p>
+</li>
+<li><p><strong><em>Set current date as default</em></strong> – if checked sets current date by default or every new entry.</p>
+</li>
+<li><p><strong><em>Custom format</em></strong> – sets custom date format. It set, for example, in the following manner: <strong>dd-MM-yyyy, MM/dd/yyyy, dd.MM.yyyy</strong>, etc.  <strong>“y” – Year, “M” – Month, “d” – Day</strong>. The number of letters means the number of figures displayed.</p>
+</li>
+<li><p><strong><em>Text format</em></strong> - sets text font family, size (in points) and style (<em>bold</em>, <em>italic</em>).</p>
+</li>
+</ul>
+</blockquote>
+<h2 id="time">Time</h2>
+<p><img src="../../images/basic_types/time.png" style="width:180px"></p>
+<p>Time is used to enter and display time. A user is able to select time by selecting it in the time picker.</p>
+<p>The following Time properties are available:</p>
+<blockquote><ul>
+<li><p><strong><em><a href="#common-control-properties">Common properties</a></em></strong></p>
+</li>
+<li><p><strong><em>Show seconds</em></strong> – if checked time value shows seconds.</p>
+</li>
+<li><p><strong><em>Set current time by default</em></strong> – if checked sets current time for every new entry.</p>
+</li>
+<li><p><strong><em>Text format</em></strong> - sets text font family, size (in points) and style (<em>bold</em>, <em>italic</em>).</p>
+</li>
+</ul>
+</blockquote>
+<h2 id="picture">Picture</h2>
+<p><img src="../../images/basic_types/picture.png" style="width:180px"></p>
+<p>Picture is used to add and display images in a card. Picture can be selected from the gallery or cloud storage <img src="../../images/basic_types/Picture-Gallery.png" style="width:30px"> , or taken by the device camera <img src="../../images/basic_types/Picture-camera.png" style="width:30px"> . It’s also possible to delete the image from the card <img src="../../images/basic_types/Picture-delete.png" style="width:30px"> or save it outside of the app for further use <img src="../../images/basic_types/Picture-Save-As.png" style="width:30px"></p>
+<p>The following Picture properties are available:</p>
+<blockquote><ul>
+<li><strong><em><a href="#common-control-properties">Common properties</a></em></strong></li>
+</ul>
+</blockquote>
+<h2 id="hyperlink">Hyperlink</h2>
+<p><img src="../../images/basic_types/hyperlink.png" style="width:180px"></p>
+<p>Hyperlink is used to enter and display hyperlinks. The hyperlinks shown on the form is active. By tapping on it users gets to the web browser that opens the specified web page.</p>
+<p>The following hyperlink properties are available:</p>
+<blockquote><ul>
+<li><p><strong><em><a href="#common-control-properties">Common properties</a></em></strong></p>
+</li>
+<li><p><strong><em>Default value</em></strong> is supported</p>
+</li>
+<li><p><strong><em>Enable barcode input</em></strong> - if checked you will be able scan barcodes to enter values in this field.</p>
+</li>
+<li><p><strong><em>Text format</em></strong> - sets text font family, size (in points) and style (<em>bold</em>, <em>italic</em>).</p>
+</li>
+</ul>
+</blockquote>
+<h2 id="email">Email</h2>
+<p><img src="../../images/basic_types/email.png" style="width:180px"></p>
+<p>Email is used to enter and display emails. Email shown on a form is active. By tapping on it a user gets to an email client and is able to send a message to the selected recipient.</p>
+<p>The following Email properties are available:</p>
+<blockquote><ul>
+<li><p><strong><em><a href="#common-control-properties">Common properties</a></em></strong></p>
+</li>
+<li><p><strong><em>Default value</em></strong> is supported</p>
+</li>
+<li><p><strong><em>Enable barcode input</em></strong> - if checked you will be able scan barcodes to enter values in this field.</p>
+</li>
+<li><p><strong><em>Text format</em></strong> - sets text font family, size (in points) and style (<em>bold</em>, <em>italic</em>).</p>
+</li>
+</ul>
+</blockquote>
+<h2 id="phone">Phone</h2>
+<p><img src="../../images/basic_types/phone.png" style="width:180px"></p>
+<p>Phone is used to enter and display phone numbers. Upon pressing the corresponding icon in a card a user is able to dial the number via one of the dialer apps.</p>
+<p>The following Phone properties are available:</p>
+<blockquote><ul>
+<li><p><strong><em><a href="#common-control-properties">Common properties</a></em></strong></p>
+</li>
+<li><p><strong><em>Default value</em></strong> is supported</p>
+</li>
+<li><p><strong><em>Enable barcode input</em></strong> - if checked you will be able scan barcodes to enter values in this field.</p>
+</li>
+<li><p><strong><em>Text format</em></strong> - sets text font family, size (in points) and style (<em>bold</em>, <em>italic</em>).</p>
+</li>
+</ul>
+</blockquote>
+<h2 id="rating">Rating</h2>
+<p><img src="../../images/basic_types/rating.png" style="width:180px"></p>
+<p>Rating provides an intuitive rating experience that allows users to select the number of stars that represents their rating.</p>
+<p>The following Rating properties are available:</p>
+<blockquote><ul>
+<li><p><strong><em><a href="#common-control-properties">Common properties</a></em></strong></p>
+</li>
+<li><p><strong><em>Default value</em></strong> is supported</p>
+</li>
+<li><p><strong><em>Maximum value</em></strong> – sets maximum possible rating value.</p>
+</li>
+<li><p><strong><em>Step</em></strong> – sets step for increment or decrement of rating. The default step is 1.</p>
+</li>
+<li><p><strong><em>Text format</em></strong> - sets text font family, size (in points) and style (<em>bold</em>, <em>italic</em>).</p>
+</li>
+</ul>
+</blockquote>
+<h2 id="address">Address</h2>
+<p><img src="../../images/basic_types/address.png" style="width:180px"></p>
+<p>Address is used to enter and display physical address information.</p>
+<p>The following Address properties are available:</p>
+<blockquote><ul>
+<li><p><strong><em><a href="#common-control-properties">Common properties</a></em></strong></p>
+</li>
+<li><p><strong><em>Show country</em></strong> – if checked information about country is visible and can be added or edited.</p>
+</li>
+<li><p><strong><em>Show region</em></strong> – if checked information about region is visible and can be added or edited.</p>
+</li>
+<li><p><strong><em>Show city</em></strong> – if checked information about city is visible and can be added or edited.</p>
+</li>
+<li><p><strong><em>Show postal code</em></strong> - if checked information about postal code is visible and can be added or edited.</p>
+</li>
+<li><p><strong><em>Show address line 1</em></strong> – if checked address line 1 is visible and can be added or edited.</p>
+</li>
+<li><p><strong><em>Show address line 2</em></strong> – if checked address line 2 is visible and can be added or edited.</p>
+</li>
+<li><p><strong><em>Set current country as default</em></strong> – sets country selected in the Language and Input setting of a device.</p>
+</li>
+<li><p><strong><em>Text format</em></strong> - sets text font family, size (in points) and style (<em>bold</em>, <em>italic</em>).</p>
+</li>
+</ul>
+</blockquote>
+<h2 id="currency">Currency</h2>
+<p><img src="../../images/basic_types/currency.png" style="width:180px"></p>
+<p>Currency is used to enter and display money units.</p>
+<p>The following Currency properties are available:</p>
+<blockquote><ul>
+<li><p><strong><em><a href="#common-control-properties">Common properties</a></em></strong></p>
+</li>
+<li><p><strong><em>Default value</em></strong> is supported</p>
+</li>
+<li><p><strong><em>Currency sign</em></strong> – sets sign to denote the currency.</p>
+</li>
+<li><p><strong><em>Currency sign place</em></strong> – sets if the currency sign should be placed before or after the numeric value.</p>
+</li>
+<li><p><strong><em>Text format</em></strong> - sets text font family, size (in points) and style (<em>bold</em>, <em>italic</em>).</p>
+</li>
+</ul>
+</blockquote>
+<h2 id="dropdown-list">Dropdown list</h2>
+<p><img src="../../images/basic_types/dropdown_list.png" style="width:180px"></p>
+<p>Dropdown can be used as a simplified version of the table reference control. It is a replacement for single column table reference.</p>
+<div class="NOTE"><h5>Note</h5><p>Values are not stored in the separate table as in table reference control, they are stored as is inside the column. It also doesn&#39;t reset when value is removed from the list.</p>
+</div>
+<p>The following Dropdown list properties are available:</p>
+<blockquote><ul>
+<li><p><strong><em><a href="#common-control-properties">Common properties</a></em></strong></p>
+</li>
+<li><p><strong><em>Sort values</em></strong> – if checked indicates if the entries should be sorted.</p>
+</li>
+<li><p><strong><em>Value list</em></strong> – a simple list editor for values available in the dropdown. It&#39;s possible to access list editor not only from the form designer but during filling in values in the form view.</p>
+</li>
+<li><p><strong><em>Text format</em></strong> - sets text font family, size (in points) and style (<em>bold</em>, <em>italic</em>).</p>
+</li>
+</ul>
+</blockquote>
+<h2 id="table-reference">Table reference</h2>
+<p><img src="../../images/basic_types/table_reference.png" style="width:180px"></p>
+<p>Table reference is used to add relation to the other table in the database. It is used when you need to show some data from the other table in the designed card. It’s also used to avoid duplicate entries and saves time on filling in a card. A user is able to proceed to the related table entry by tapping the corresponding icon in a card, edit some information and get back to the table he was working with.</p>
+<p>The following Table Reference properties are available:</p>
+<blockquote><ul>
+<li><p><strong><em><a href="#common-control-properties">Common properties</a></em></strong></p>
+</li>
+<li><p><strong><em>Table</em></strong> – allows selecting a table to refer to from the list of all tables in the database.</p>
+</li>
+<li><p><strong><em>Column</em></strong> – allows selecting a column to refer to from a list of all columns of the table selected on a previous step.</p>
+</li>
+<li><p><strong><em>Sort values</em></strong> – if checked indicates if the entries should be sorted.</p>
+</li>
+<li><p><strong><em>Text format</em></strong> - sets text font family, size (in points) and style (<em>bold</em>, <em>italic</em>).</p>
+</li>
+<li><p><strong><em>Dependency filter</em></strong> - allows to filter combobox values based on another combobox. Can be used when cascade grouping is used. More detailed explanation is available in the following <a href="filtered_dropdown.html">article</a>.</p>
+<ul>
+<li><strong><em>Current table relation</em></strong> - specifies combobox of the current form which is used for filtering purposes.</li>
+<li><strong><em>Parent relation controls</em></strong> - links filtering combobox with combobox from parent table. In order to filter there should be the same table relation to the same table in current table as well as in parent table. By linking them we filter current relation and show only values which corresponds to &quot;current table relation&quot;</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p>More information regarding this control can be found in the following <a href="table_rel.html">article</a>.</p>
+<h2 id="calculable">Calculable</h2>
+<p><img src="../../images/basic_types/calculable.png" style="width:180px"></p>
+<p>Calculable is used display data that is a result of some expression calculation. More information on available functions and fields that can be used in formulas is available in the following <a href="use_exp.html">article</a>.</p>
+<p>The following Calculable properties are available:</p>
+<blockquote><ul>
+<li><p><strong><em><a href="#common-control-properties">Common properties</a></em></strong></p>
+</li>
+<li><p><strong><em>Expression</em></strong> – sets formula that needs to be calculated to display the value in this field.</p>
+</li>
+<li><p><strong><em>Format</em></strong> – sets format of the calculated value. If a user selects some value different from <em>“None”</em> additional options become available. It’s offered to select <em>Number</em> or <em>Percentage Format</em>. <em>Decimal numbers</em> allows to specify number of decimal places to use for number format.</p>
+</li>
+<li><p><strong><em>Prefix</em></strong> – will add some data before the calculated value (for example currency sign).</p>
+</li>
+<li><p><strong><em>Postfix</em></strong> – will add some data after the calculated value (for example currency sign).</p>
+</li>
+<li><p><strong><em>Presentation</em></strong> – sets type of the calculated value. The default value type is Text. (Can be: Text, Checkbox, Hyperlink, Email, Phone, Picture, File).</p>
+</li>
+</ul>
+</blockquote>
+<h2 id="location">Location</h2>
+<p><img src="../../images/basic_types/location.png" style="width:180px"></p>
+<p>Location is used to enter and display coordinates of a place. Coordinates can be entered manually in the following format: <em>53.389175;83.745387</em>, or you can get your current coordinates with GPS and add them to a card <img src="../../images/basic_types/Location-GPS.png" style="width:30px">
+Users are also able to view the place specified by the entered coordinates on the map <img src="../../images/basic_types/Location-Map.png" style="width:30px"></p>
+<p>The following Location properties are available:</p>
+<blockquote><ul>
+<li><p><strong><em><a href="#common-control-properties">Common properties</a></em></strong></p>
+</li>
+<li><p><strong><em>Text format</em></strong> - sets text font family, size (in points) and style (<em>bold</em>, <em>italic</em>).</p>
+</li>
+<li><p><strong><em>Marker expression</em></strong> - sets formula for the text used in the marker&#39;s popup message on the map.</p>
+</li>
+</ul>
+</blockquote>
+<h2 id="nested-table">Nested table</h2>
+<p><img src="../../images/basic_types/Nested_Table.png" style="width:180px"></p>
+<p>Nested table is used to insert a child table into the card. This is very convenient for storing additional data that is related to a definite entry but adding it to the card would overload it and make unreadable.</p>
+<p>The following Nested table properties are available:</p>
+<blockquote><ul>
+<li><p><strong><em><a href="#common-control-properties">Common properties</a></em></strong></p>
+</li>
+<li><p><strong><em>Show as link</em></strong> – if checked a nested table will be represented by a hyperlink.</p>
+</li>
+<li><p><strong><em>Columns settings</em></strong> – provides access to the list of columns where a user can manage columns visibility and order.</p>
+</li>
+</ul>
+</blockquote>
+<p>Nested table layout and columns are created and managed in the same manner as the parent table. Users can access nested table designer in two ways: by tapping the icon <img src="../../images/basic_types/nested_table_edit.png" style="width:30px"> in the designer.</p>
+<h2 id="attached-file">Attached file</h2>
+<p><img src="../../images/basic_types/attached_file.png" style="width:180px"></p>
+<p>Attached file control allows to add file (blob) data to the database. It could be documents (pdf, docx, xlsx) and any other file types.</p>
+<div class="NOTE"><h5>Note</h5><p>Files are stored inside the database. They are not a link to the file in the file system. When you attach file it&#39;s copied to the database.</p>
+</div>
+<p>The following Attached file properties are available:</p>
+<blockquote><ul>
+<li><p><strong><em><a href="#common-control-properties">Common properties</a></em></strong></p>
+</li>
+<li><p><strong><em>Text format</em></strong> - sets text font family, size (in points) and style (<em>bold</em>, <em>italic</em>).</p>
+</li>
+</ul>
+</blockquote>
+<h2 id="related-fields">Related fields</h2>
+<p>In the designer toolbox you will see another group of elements below the described controls. You will see a list of all fields from the related tables referred by field caption. You can simply drag and drop any such field to the form. A calculable control with the pre-set expression will be added and calculable type will be automatically specified. The expression has the following look:  <em>client.email</em>, where <em>client</em> is a &quot;Name to use in formulas&quot; of the Table relation control that makes reference to the selected table and <em>email</em> is the name of the column (field) in this table.  Such fields have all properties of a Calculable field.</p>
+
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

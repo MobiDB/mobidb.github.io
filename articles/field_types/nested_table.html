@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Nested table (one to many relation, master-detail) </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Nested table (one to many relation, master-detail) ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="https://mobidb.mobi">
+                <img id="logo" class="svg" src="../../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+              <h1 id="nested-table-one-to-many-relation-master-detail">Nested table (one to many relation, master-detail)</h1>
+              
+<p>Nested table allows to set up one to many relationship like in sample provided below:</p>
+<p><img src="../../images/nested_table/nested_table_sample.png" style="width:800px"></p>
+<p>Let&#39;s create order details sample to see how it can be set up.
+Create blank database:</p>
+<p><img src="../../images/nested_table/blank_db.png" style="width:800px"></p>
+<p>Before we start adding nested table let&#39;s add &quot;product&quot; table with the following structure:</p>
+<p><img src="../../images/nested_table/product.png" style="width:800px"></p>
+<p>Then create &quot;orders&quot; table and open designer:</p>
+<p><img src="../../images/nested_table/empty_table.png" style="width:800px"></p>
+<p>Let&#39;s add order date field:</p>
+<p><img src="../../images/nested_table/date.png" style="width:800px"></p>
+<p>Now we are ready to add nested table control:</p>
+<p><img src="../../images/nested_table/nested_table_control.png" style="width:800px"></p>
+<p>In order to design nested table we need to open designer for it:</p>
+<p><img src="../../images/nested_table/design_nested_table.png" style="width:800px"></p>
+<p>Now let&#39;s add table relation to &quot;Product&quot; table. It is not related to our article, for more info take a look at <a href="table_rel.html">Table relation set up article</a></p>
+<p><img src="../../images/nested_table/table_reference.png" style="width:800px"></p>
+<p>In order to calculate total we need to take product price and to multiply it by Quantity. Start from adding calculable field:</p>
+<p><img src="../../images/nested_table/calculable.png" style="width:800px"></p>
+<p>Configure &quot;total&quot; calculable formula:
+<img src="../../images/nested_table/total.png" style="width:800px"></p>
+<p>In order to get back to parent table design use bread crumbs:</p>
+<p><img src="../../images/nested_table/bread_crumbs.png" style="width:800px"></p>
+<p>Let&#39;s configure total column in parent table:</p>
+<p><img src="../../images/nested_table/global_total.png" style="width:800px"></p>
+<p>For more info regarding total expression take a look at <a href="use_exp.html">Calculable expressions article</a></p>
+<p>Now our nested table is up and running:</p>
+<p><img src="../../images/nested_table/nested_table_ready.png" style="width:800px"></p>
+
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

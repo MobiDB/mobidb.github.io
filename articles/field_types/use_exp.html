@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Calculable expressions </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Calculable expressions ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="https://mobidb.mobi">
+                <img id="logo" class="svg" src="../../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+              <h1 id="calculable-expressions">Calculable expressions</h1>
+              
+<h2 id="getting-the-value-of-the-column">Getting the value of the column</h2>
+<p>To get the value of the column it is necessary to use the name specified in a column properties as <strong>Name used in formulas</strong>.</p>
+<p>For example, if you would like to multiply the value of the column named in formulas as <strong>Price</strong> by the value of the column named as <strong>Quantity</strong>, you can use the following expression:</p>
+<p><strong>quantity*price</strong></p>
+<h2 id="about-types">About types</h2>
+<p>The typization of expression calculation result is dynamic. The type is defined upon calculation. The type of the operation execution result often depends on the types of arguments, but sometimes also on the values of arguments. For example, the following expression <strong>if(marked, sum, &quot;Not marked&quot;)</strong> will return either the value of the sum field or <strong>&quot;Not marked&quot;</strong> string depending on the value of the <strong>marked</strong> field.</p>
+<p>The following basic types are available:</p>
+<ul>
+<li><p>Boolean</p>
+</li>
+<li><p>String</p>
+</li>
+<li><p>Number</p>
+</li>
+<li><p>Date</p>
+</li>
+<li><p>Time</p>
+</li>
+<li><p>Table reference</p>
+</li>
+<li><p>Nested table</p>
+</li>
+<li><p>Picture</p>
+</li>
+</ul>
+<p>The values of all listed types can be compared for equality <strong>(=)</strong> or inequality <strong>(!=)</strong>.</p>
+<h2 id="types-specification">Types specification</h2>
+<h3 id="boolean">Boolean</h3>
+<p>The values of the Boolean type do not have any properties or methods.</p>
+<p>The following operations can be performed over Boolean type values: <strong>NOT, AND, OR</strong></p>
+<p>The constants of the Boolean type are declared as <strong>true</strong> or <strong>false</strong>.</p>
+<h3 id="string">String</h3>
+<p>The values of the String type do not have any properties or methods.</p>
+<p>The strings can be concatenated with the help of <strong>+</strong> operator.</p>
+<p>The following comparison operators are supported:  <strong>&lt;, &gt;, &lt;=, &gt;=</strong></p>
+<p>The constants of the String type are defined with the help of double quotes: <strong>“String”</strong>               </p>
+<h3 id="number">Number</h3>
+<p>The values of the Number type do not have any properties or methods.</p>
+<p>The following operations are supported: <strong>unary -, +, -, *, /, % (remainder of the division)</strong></p>
+<p>The following comparison operators are supported: <strong>&lt;, &gt;, &lt;=, &gt;=</strong></p>
+<p>The constants of the Number type are defined by the digits. A point <strong>(.)</strong> is used as a decimal separator.</p>
+<h3 id="date">Date</h3>
+<p>The date value acquired from the <strong>Date</strong> type field holds only date as such, but during the calculation, if you add a <strong>Time</strong> type value to a <strong>Date</strong> type value it is possible to get a combined <strong>Date/Time</strong> value.    </p>
+<p><u>Properties:</u></p>
+<ul>
+<li><p><strong>day</strong> – returns the day of the month of a given date (21.01.2015 12:01 -&gt; 21)</p>
+</li>
+<li><p><strong>month</strong> – returns the month of given date (21.01.2015 12:01 -&gt; 1)</p>
+</li>
+<li><p><strong>year</strong> – returns the year of a given date (21.01.2015 12:01 -&gt; 2015)</p>
+</li>
+<li><p><strong>date</strong> – returns the date, that does not have a time shift (21.01.2015 12:01 -&gt; 21.01.2015)</p>
+</li>
+<li><p><strong>time</strong> – returns the time shift from 0:00 date (21.01.2015 12:01 -&gt; 12:01)</p>
+</li>
+</ul>
+<p>The values of the <strong>Date</strong> type do not have any methods.</p>
+<p><u>The possible operations:</u></p>
+<ul>
+<li><p><strong>addition to time</strong> – results in a date, shifted forward for a given time</p>
+</li>
+<li><p><strong>subtraction of time from date</strong> – results in a date, shifted backward for a given time</p>
+</li>
+<li><p><strong>subtraction of date from date</strong> – results in a time, elapsed from the subtracted date</p>
+</li>
+</ul>
+<p>The following comparison operators are supported: <strong>&lt;, &gt;, &lt;=, &gt;=</strong></p>
+<h3 id="time">Time</h3>
+<p>In general is represented by a time interval. When getting the time value from the <strong>Time</strong> type field the value can fall within 00:00:00 to 23:59:59, but during the expression calculation the result may be more than one day.        </p>
+<p><u>Properties:</u></p>
+<ul>
+<li><p><strong>days</strong> – returns a number of days in a given time interval (1d 12:02:15 -&gt; 1)</p>
+</li>
+<li><p><strong>hours</strong> – returns a number of hours in a given time interval (1d 12:02:15 -&gt; 12)</p>
+</li>
+<li><p><strong>minutes</strong> – returns a number of minutes in a given time interval (1d 12:02:15 -&gt; 2)</p>
+</li>
+<li><p><strong>seconds</strong> – returns a number of seconds in a given time interval (1d 12:02:15 -&gt; 15)</p>
+</li>
+<li><p><strong>totalhours</strong> – returns  a total number of hours of a given time interval (1d 12:01:15 -&gt; 36)</p>
+</li>
+<li><p><strong>totalminutes</strong> – returns  a total number of minutes of a given time interval (1d 12:01:15 -&gt; 2161)</p>
+</li>
+<li><p><strong>totalseconds</strong> – returns  a total number of seconds of a given time interval (1d 12:01:15 -&gt; 129675)</p>
+</li>
+</ul>
+<p>The values of the <strong>Time</strong> type do not have any methods.</p>
+<p><u>The possible operations:</u>  <strong>unary -, addition to another time interval, subtraction from time interval</strong></p>
+<h3 id="table-reference">Table reference</h3>
+<p>Provides access to table fields through its properties. For example: <strong>reference.column1</strong>.</p>
+<p>No methods are supported.</p>
+<h3 id="nested-table">Nested table</h3>
+<p>No properties are available.</p>
+<p><u>The following methods are supported:</u></p>
+<ul>
+<li><strong>getTotal(<function>, <column name="">)</column></function></strong> – aggregates the value of a given column (passed as a the second argument) with the help of a function specified in the first argument.</li>
+</ul>
+<p>For example:  <strong>table.GetTotal(“Sum”, “column1”)</strong></p>
+<p><u>The following functions are supported:</u></p>
+<ul>
+<li><p><strong>Sum</strong> – a sum</p>
+</li>
+<li><p><strong>Min</strong> – a minimum value</p>
+</li>
+<li><p><strong>Max</strong> – a maximum value</p>
+</li>
+<li><p><strong>Average</strong> – an average value</p>
+</li>
+<li><p><strong>Any</strong> – at least one of the logical values is true</p>
+</li>
+<li><p><strong>All</strong> – all logical values are true</p>
+</li>
+<li><p><strong>Count</strong> – a number of non-zero values as well as the values without logical negation</p>
+</li>
+<li><p><strong>Variance</strong></p>
+</li>
+<li><p><strong>StandardDeviation</strong></p>
+</li>
+</ul>
+<h3 id="picture">Picture</h3>
+<p>No methods or properties are available.</p>
+<p>When comparing pictures, it is assumed that they are not equal by default.</p>
+<h3 id="methods-common-for-all-types">Methods common for all types</h3>
+<p><strong>ToString()</strong> – converts a value into a string.</p>
+<p>For example:</p>
+<p>Column1 = 1</p>
+<p>Column2 = 2</p>
+<p>Column1 + Column2 will return the integer ‘3’,</p>
+<p>Column1.ToString() + Column2.ToString() will return the string &quot;12&quot;</p>
+<h3 id="the-functions-of-conditional-choice">The functions of conditional choice</h3>
+<p><strong>if (condition, value1, value2)</strong> – the 1st parameter should be of logical type; the 2nd and the 3rd parameters could be of any type. If the 1st parameter is true, the function returns the 2nd parameter value, otherwise it returns the 3rd parameter value. For example: if(length(column1) &gt; 0, &quot;Yes&quot;, &quot;No&quot;)</p>
+<p><strong>switch (condition[0], value[0], … , value by default)</strong> – if the condition[i] is set to true, the function returns the value[i], if the condition[i] in any i is false, the value returns by default.</p>
+<h3 id="formatting-functions">Formatting Functions</h3>
+<p><strong>format (object, mask)</strong>, the object is of any type except child table and table reference, the mask is of string type. It returns the object’s string presentation according to the mask.</p>
+<p><strong>BuildString(format, <arguments list="">)</arguments></strong> - replaces the format items in a specified string with the string representation of objects.</p>
+<p><u>Parameters:</u></p>
+<p><strong>format</strong> - is a composite format string. Basically, it is represented as a static text with placeholders in specific positions. The placeholder indicates that a string representation of the parameter with a specified index (which starts from ‘0’) should be added to its position.</p>
+<p><u>The placeholder format:</u>
+<strong>{<parameter index="">}</parameter></strong></p>
+<p>For example: <strong>BuildString(&quot;{0} of {1}&quot;, 1, 10)</strong> will return the string &quot;1 of 10&quot;.
+Besides, it is possible to use an extended placeholder format:
+<strong>{<parameter index="">[,<alignment>][:<format>]}</format></alignment></parameter></strong></p>
+<p><strong>Alignment</strong> - is an optional parameter that designates the number of characters allotted for object presentation. If the length of the string presentation is lesser than a specified value, then the remaining space will be filled with blanks to the left (in case <strong>alignment &gt;0</strong>) or to the right (in case <strong>alignment &lt;0</strong>).
+If the length of the string presentation is greater than the alignment value, then the alignment value will be ignored.</p>
+<p><strong>Format</strong> - the format string placed after &quot;:&quot; has the same functionality as <strong>format</strong> function.</p>
+<p><strong>Arguments list</strong> – arguments of various types, converted to String value and inserted at specified position in a format string.</p>
+<h3 id="mathematical-functions">Mathematical Functions</h3>
+<p><strong>sin(argument)</strong> – calculates the argument sine. The argument is of the numeric type, the calculation result is of the numeric type.</p>
+<p><strong>cos(argument)</strong> – calculates the argument cosine. The argument is of the numeric type, the calculation result is of the numeric type.</p>
+<p><strong>tan(argument)</strong> – calculates the argument tangent. The argument is of the numeric type, the calculation result is of the numeric type.</p>
+<p><strong>atan(argument)</strong> – calculates the argument arctangent. The argument is of the numeric type, the calculation result is of the numeric type.</p>
+<p><strong>sqr(argument)</strong> – calculates the argument to square. The argument is of the numeric type, the calculation result is of the numeric type.</p>
+<p><strong>sqrt(argument)</strong> – calculates the argument‟s square root. The argument is of the numeric type, the calculation result is of the numeric type.</p>
+<p><strong>log(argument)</strong> – calculates the argument‟s natural logarithm. The argument is of the numeric type, the calculation result is of the numeric type.</p>
+<p><strong>exp(argument)</strong> – raise E number to the argument degree. The argument is of the numeric type, the calculation result is of the numeric type.</p>
+<p><strong>sign(argument)</strong> – returns:-1 if the argument is negative, 0 – if the argument is 0, 1 – if the argument is positive. The argument is of the numeric type, the calculation result is of the numeric type.</p>
+<p><strong>abs(argument)</strong> – returns the argument‟s absolute value. The argument is of the numeric type, the calculation result is of the numeric type.</p>
+<p><strong>round(argument1, argument2)</strong> – rounds the 1st argument value to the symbols amount after the comma, assigned by the 2nd argument. The 1st argument is of the double type, the 2nd argument is of the numeric type, the calculation result is of the numeric type.</p>
+<h3 id="date--time-processing-functions">Date &amp; Time Processing Functions</h3>
+<p><strong>getMonth (argument)</strong> – returns the month number by the date passed by an argument.</p>
+<p><strong>getMonthName (argument)</strong> – returns the string month name by the date passed by an argument.</p>
+<p><strong>getNow()</strong> - returns the current date.</p>
+<p><strong>getDayOfWeek (argument)</strong> – returns the day of week number by the date passed by an argument.</p>
+<p><strong>getDayOfWeekName (argument)</strong> – returns the string day of week name by the date passed by an argument.</p>
+<p><strong>getQuarter (argument)</strong> – returns the quarter number of a date specified as an argument.</p>
+<p><strong>addDays (argument, value)</strong> - adds days to date. The first argument is a value of date type and the second argument is a number of days specified as numeric value. The result is a new date.</p>
+<p><strong>addHours (argument, value)</strong> - adds hours to date or time. The first argument is a value of date or time type and the second argument is a number of hours specified as a numeric value. The result is a new date or time.</p>
+<p><strong>addMinutes (argument, value)</strong> - adds minutes to date or time. The first argument is a value of date or time type and the second argument is a number of minutes specified as a numeric value. The result is a new date or time.</p>
+<p><strong>addMonths (argument, value)</strong> - adds months to date. The first argument is a value of date type and the second argument is a number of months specified as a numeric value. The result is a new date.</p>
+<p><strong>addSeconds (argument, value)</strong> - adds seconds to date or time. The first argument is a value of date or time type and the second argument is a number of seconds specified as a numeric value. The result is a new date or time.</p>
+<p><strong>addYears (argument, value)</strong> - adds years to date. The first argument is a value of date type and the second argument is a number of years specified as a numeric value. The result is a new date.</p>
+<p><strong>GetWeekOfYear(weekRule, firstDayOfWeek)</strong> – returns the week of the year for the specified <strong>weekRule</strong> and <strong>firstDayOfWeek</strong></p>
+<p><u>Parameter:</u> <strong>weekRule</strong> – a string that defines a rule which is used to designate the first week of the year</p>
+<p><u>Values:</u></p>
+<p><strong>D</strong> (First day) - indicates that the first week of the year starts on the first day of the year and ends before the following designated first day of the week. The value is 0.</p>
+<p><strong>FWD</strong> (First four day week) - indicates that the first week of the year is the first week with four or more days before the designated first day of the week. The value is 2.</p>
+<p><strong>FW</strong> (First full week) -  indicates that the first week of the year begins on the first occurrence of the designated first day of the week on or after the first day of the year. The value is 1.</p>
+<p><u>Parameter:</u> <strong>firstDayOfWeek</strong> – the first day of the week</p>
+<p><u>Values:</u></p>
+<p><strong>MO</strong> - Monday, <strong>TU</strong> - Tuesday, <strong>WE</strong> - Wednesday, <strong>TH</strong> - Thursday, <strong>FR</strong> - Friday, <strong>SA</strong> - Saturday, <strong>SU</strong> - Sunday</p>
+<p><strong>GetWeekOfYear()</strong> – returns the week of the year by using <strong>weekRule</strong> and <strong>firstDayOfWeek</strong> default values. The value of both parameters may vary on different devices, that’s why it is recommended to explicitly specify the calculation method when calling the function with parameters.</p>
+<p>For example: <strong>column1.GetWeekOfYear(&quot;D&quot;,&quot;MO&quot;)</strong></p>
+<h3 id="string-functions">String Functions</h3>
+<p><strong>concat (string1, string2)</strong> - returns the result of appending one string (string2) to the end of another string (string1)</p>
+<p><strong>indexOf(string1, string2,[start])</strong> - returns the position of the first occurrence of a specified value in a string; returns -1 if the value to search for never occurs. [start] – Optional parameter. Default 0. At which position to start the search.</p>
+<p><strong>insert(string,position,subString)</strong> - inserts the target string (subString) into the source string (string) at specified (position)</p>
+<p><strong>length(string)</strong> -  returns the number of characters in the string</p>
+<p><strong>padLeft(string,length,char)</strong> -  adds characters(char) to the left of a string till a certain length is reached</p>
+<p><strong>padRight(string,length,char)</strong> -  adds characters(char) to the right of a string till a certain length is reached</p>
+<p><strong>remove(string,start,length)</strong> - eliminates a range of characters in a string to a specified length (length) beginning from the (start) position</p>
+<p><strong>replace (string, subString, newSubString)</strong> - returns a string corresponding to the replacement of a given string with another in the specified string.  Input string (string), a string to be replaced (subString), a string to replace all occurrences of substring (newSubString)</p>
+<p><strong>subString(string,start,length)</strong> -  returns a substring of the specified string. If the (length) is greater than zero, the function returns a subString starting at character position (start) with a length of (length) characters. If the (length) is equal to zero, the function returns an empty string. Input string (string), position of the start of the substring (start), the length of the substring (length)</p>
+<p><strong>toLower(string)</strong> - returns the specified string converted to lowercase</p>
+<p><strong>toUpper(string)</strong> - returns the specified string converted to uppercase</p>
+<p><strong>trim(string)</strong> - returns the given string trimmed of whitespace</p>
+<p><strong>trimEnd(string)</strong> – returns the given string trimmed of trailing whitespace</p>
+<p><strong>trimStart(string)</strong> - returns the given string trimmed of leading whitespace</p>
+<p><strong>regIsMatch(string,expressionString)</strong> - returns the sign of string matching the regular expression (expressionString)</p>
+<p><strong>regReplace(string, expressionString, newString)</strong> – replaces a substring matching the regular expression (expressionString) in a (string) with a (newString)</p>
+
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

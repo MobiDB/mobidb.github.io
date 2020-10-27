@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Import data from MS Access </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Import data from MS Access ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="https://mobidb.mobi">
+                <img id="logo" class="svg" src="../../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+              <h1 id="import-data-from-ms-access">Import data from MS Access</h1>
+              
+<p>In order to import Microsoft Access data table to MobiDB application, the following steps should be performed.</p>
+<p><img src="../../images/import_access/1.png" style="width:600px"></p>
+<p>1.Select <strong>External Data</strong> tab in MS Access, then click <strong>Export TextFile</strong> button on the ribbon panel.</p>
+<p><img src="../../images/import_access/2.png" style="width:600px"></p>
+<p>2.Specify the destination file name and format. By default, MS Access uses <strong>.txt</strong> file name extension, that should be changed to <strong>.csv</strong>.  Go to the next step by pressing <strong>OK</strong> button.</p>
+<p><img src="../../images/import_access/3.png" style="width:600px"></p>
+<p>3.In <strong>Export Text Wizard</strong> check to make sure the <strong>Delimited</strong> option is selected ( which is set by default) and press <strong>Advanced</strong> button to modify the settings.</p>
+<p><img src="../../images/import_access/4.png" style="width:600px"></p>
+<p>4.Select  comma sign (,)  as <strong>Field Delimiter</strong> and specify UTF-8 encoding to be used for exported data. Then press <strong>OK</strong> button to confirm changes.</p>
+<p><img src="../../images/import_access/5.png" style="width:600px"></p>
+<p>5.Press <strong>Next</strong> to proceed.</p>
+<p><img src="../../images/import_access/6.png" style="width:600px"></p>
+<p>6.Check to make sure <strong>Include Field Names on First Row</strong> option is selected. Then press <strong>Finish</strong> button to complete export process.</p>
+<p><img src="../../images/import_access/7.png" style="width:600px"></p>
+<p>7.The <strong>.csv</strong> file is created under the file system path specified in step 2. Press <strong>Close</strong> button to exit.</p>
+<p><img src="../../images/import_access/8.png" style="width:600px"></p>
+<p>8.Copy the created <strong>.csv</strong> file to your Android device if you want to use Mobidb for android for import.</p>
+<p>Follow instructions written in <a href="csv_import.html">csv import article</a>.</p>
+
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

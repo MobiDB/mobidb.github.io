@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Filtered dropdown lists set up </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Filtered dropdown lists set up ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="https://mobidb.mobi">
+                <img id="logo" class="svg" src="../../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+              <h1 id="filtered-dropdown-lists-set-up">Filtered dropdown lists set up</h1>
+              
+<p>Multi table databases imply the availability of relations between the tables. Relational databases can be quite complex and usually contain hundreds and thousands of records. It would be very convenient to have the ability to filter the selected data on the form when you fill in the card to save time for adding new entries. Here is the use case: you’ve got a little book store and need to quickly create new orders. So, when creating a new order it would be good to select genre (drama, romance, satire, tragedy, comedy, tragicomedy, realistic fiction, non-fiction, etc.) and then see only those authors that are in the category and then select the necessary book of the author from the list.</p>
+<p>MobiDB Database Designer can do it. This step-by-step tutorial will show you how to do it.</p>
+<p>Bearing in mind the task described above, our database should contain the following tables: Genres, Authors, Books, and Orders. The database scheme with relations is in the picture below:</p>
+<p><img src="../../images/filtered_dropdown/1.jpg"></p>
+<p>1.Let’s start creating the database from the Genres table. This is how it looks in the designer.</p>
+<p><img src="../../images/filtered_dropdown/2.png" style="width:800px"></p>
+<p>Here is the table view:</p>
+<p><img src="../../images/filtered_dropdown/3.png" style="width:800px"></p>
+<p>2.Now we need to add the <strong>Authors</strong> table. It will contain author name and genre the author relates to. <strong>Genre</strong> will be a Table reference control and we will be able to select it from the dropdown list. More information on creating table relations can be found <a href="table_rel.html">here.</a></p>
+<p><strong><em>Designer view:</em></strong> Author is a String field type, Genre is the Table Reference field type.</p>
+<p><img src="../../images/filtered_dropdown/4.png" style="width:800px"></p>
+<p><strong><em>Card view:</em></strong> <strong>Genre</strong> can be selected from the dropdown list.</p>
+<p><img src="../../images/filtered_dropdown/5.png" style="width:800px"></p>
+<p><strong><em>Table view:</em></strong> provides an overview of all authors and genres. Here you can soft and filter, search for authors and genres.</p>
+<p><img src="../../images/filtered_dropdown/6.png" style="width:800px"></p>
+<p>3.Let’s add the <strong>Books</strong> table. It will contain fields necessary to describe the book including book title, publisher, format, pages, publication date, ISBN, price and author. <strong>Author</strong> is the Table reference field and we will be able to select the author from the dropdown list.</p>
+<p><strong><em>Designer view:</em></strong> <strong>Author</strong> is the Table reference control.</p>
+<p><img src="../../images/filtered_dropdown/7.png" style="width:800px"></p>
+<p><strong><em>Card view:</em></strong> Selecting author from the dropdown list.</p>
+<p><img src="../../images/filtered_dropdown/8.png" style="width:800px"></p>
+<p><strong><em>Table view:</em></strong> list of all available books.</p>
+<p><img src="../../images/filtered_dropdown/9.png" style="width:800px"></p>
+<p>4.And finally we will add the Orders table that will contain the fields specifying the order including order ID, customer, genre (selected from the dropdown list), author (selected from the dropdown list, will be filtered depending on the selected genre), book (selected from the dropdown list, will be filtered depending on the selected author), quantity, unit price, discount, tax, total.</p>
+<p>Tips:</p>
+<p><strong><em>Adding Genre field:</em></strong> Genre field is a Table reference control. It has the following settings:</p>
+<p><img src="../../images/filtered_dropdown/10.png" style="width:800px"></p>
+<p><strong><em>Adding Author field:</em></strong> Author field is a Table reference control. It has the following settings:</p>
+<p><img src="../../images/filtered_dropdown/11.png" style="width:800px"></p>
+<p>Please pay attention to the following properties of the Dependency filter:</p>
+<ul>
+<li><strong>Current table relation</strong>. It sets the relation of fields in the current table. As we want to select the author depending on the selected genre, we need to set the relation to the Genre field.</li>
+<li><strong>Parent relation control</strong>. Determines the relation from the parent table (in this case this is the Authors table) that is used to filter data. So, we use Author – Genre relation from the Authors table to filter the data.</li>
+</ul>
+<p><strong><em>Adding Book field:</em></strong> Book field is a Table Reference control. It has the following settings:</p>
+<p><img src="../../images/filtered_dropdown/12.png" style="width:800px"></p>
+<p>Please pay attention to the following properties of the <strong>Dependency</strong> filter:</p>
+<ul>
+<li><strong>Current table relation.</strong> It sets the relation of fields in the current table. As we want to select the book depending on the selected author, we need to set the relation to the <strong>Author</strong> field.</li>
+<li><strong>Parent relation control.</strong> Determines the relation from the parent table (in this case this is the Books table) that is used to filter data. So, we use <strong>Book – Author</strong> relation from the <strong>Books</strong> table to filter the data.</li>
+</ul>
+<p><strong><em>Adding Price field:</em></strong> It would be very convenient to show book price automatically (get it from the <strong>Book</strong> table). It can be done with just one move. Scroll the toolbox down to the Related fields section, select the <strong>Price (Book)</strong> field and drag and drop it on to the form. The corresponding calculable field with the pre-set expression and caption will be added. You can adjust the other options, if necessary.</p>
+<p><img src="../../images/filtered_dropdown/13.png" style="width:800px"></p>
+<p><strong><em>Adding Total field:</em></strong> Total field is a Calculable control. Here you will add an expression to calculate total cost of the order: <strong>price*quantity</strong>.</p>
+<p><img src="../../images/filtered_dropdown/14.png" style="width:800px"></p>
+<p>Here is how the form looks in the designer:</p>
+<p><img src="../../images/filtered_dropdown/15.png" style="width:800px"></p>
+<p>5.Click the checkmark to save changes and close the designer.</p>
+<p>So, let’s create a new order. Select the Genre from the list:</p>
+<p><img src="../../images/filtered_dropdown/16.png" style="width:800px"></p>
+<p>Select the Author from the list of all authors who write about Art &amp; Photography. Note that only 3 authors are available.</p>
+<p><img src="../../images/filtered_dropdown/17.png" style="width:800px"></p>
+<p>Select the Book of the author you chose on the previous step. You will see only books of the selected author in the dropdown list.</p>
+<p><img src="../../images/filtered_dropdown/18.png" style="width:800px"></p>
+<p>Price of the selected book will be added automatically.</p>
+<p><img src="../../images/filtered_dropdown/19.png" style="width:800px"></p>
+<p>Total order cost will be calculated once you set quantity.</p>
+<p><img src="../../images/filtered_dropdown/20.png" style="width:800px"></p>
+<p>This is how you can quickly setup filtered dropdown lists to make it easy to add new entries.</p>
+
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

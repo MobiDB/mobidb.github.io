@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Accumulated balance set up </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Accumulated balance set up ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="https://mobidb.mobi">
+                <img id="logo" class="svg" src="../../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+              <h1 id="accumulated-balance-set-up">Accumulated balance set up</h1>
+              
+<p>Accumulated balance is an exceptionally useful feature for users who would like to define and run balances for the specified fields. The balance calculations are automatically updated, thus no user intervention is required to get the actual state of the values.</p>
+<p>This tutorial displays how to create an accumulated balance sheet from scratch.</p>
+<p>To begin with, let us create the database that we can run for our little imaginary electronics shop.
+The basic database tables list for such undertaking implies the availability of the following tables:
+<strong><em>Customers</em></strong> and <strong><em>Employees</em></strong> – the tables that keep records of our customers and employees, as well as <strong><em>Products</em></strong> table that lists the electronic items we sell. These auxiliary tables do not take part in our calculations.</p>
+<p><img src="../../images/acc_balance/1.png" style="width:500px"></p>
+<p><img src="../../images/acc_balance/2.png" style="width:500px"></p>
+<p>The rest two tables named <strong><em>In</em></strong> and <strong><em>Out</em></strong> are the main tables that we use to debit incoming goods and to issue invoices to our customers.</p>
+<p>The <strong><em>In</em></strong> table keeps the daily records of the electronics supplied to our storage.</p>
+<p><img src="../../images/acc_balance/3.png" style="width:500px"></p>
+<p>Whereas the <strong><em>Out</em></strong> table maintains the list of the invoices issued to our customers by the employees.</p>
+<p><img src="../../images/acc_balance/4.png" style="width:500px"></p>
+<p>In such scenario, the supply of electronic devices to our shop and their subsequent selling are the two processes that run separately.  This means we can have difficulties with the calculation of products in stock and cannot easily define the list of currently available devices. This is the case when the accumulated balance feature comes in handy.</p>
+<p>The next steps will describe the process of adding the accumulated balance feature to our database in order to keep track of the items available in stock.</p>
+<p>1.Add a new accumulated balance by tapping on the <strong><em>Plus</em></strong> icon in the upper right corner of the instrument panel.</p>
+<p><img src="../../images/acc_balance/5.png" style="width:350px"></p>
+<p>2.Specify the accumulated balance name and tap <strong><em>OK</em></strong> to confirm.</p>
+<p><img src="../../images/acc_balance/6.png" style="width:350px"></p>
+<p>3.To configure the accumulated balance, tap on the <strong><em>Open configurator</em></strong> option.</p>
+<p><img src="../../images/acc_balance/7.png" style="width:350px"></p>
+<p>4.Then, tap <strong><em>Open structure editor</em></strong> to run it.</p>
+<p><img src="../../images/acc_balance/8.png" style="width:350px"></p>
+<p>5.The accumulated balance structure consists of two field types. The <strong><em>detail</em></strong> fields that specify the fields we would like to run the balance for and the <strong><em>aggregation</em></strong> fields that display the data itself.</p>
+<p><img src="../../images/acc_balance/9.png" style="width:350px"></p>
+<p>6.Set the detail field name to <strong><em>Product</em></strong> and specify the field type. In most cases, the <strong><em>Auto</em></strong> type will be the reasonable choice.</p>
+<p><img src="../../images/acc_balance/10.png" style="width:350px"></p>
+<p>In case you made a mistake or would like to modify/delete the existing detail field simply tap on the options menu icon to the right of the field and select either <strong><em>Edit</em></strong> or <strong><em>Delete</em></strong>. The same is true for the aggregation fields.</p>
+<p><img src="../../images/acc_balance/11.png" style="width:350px"></p>
+<p>7.Set the aggregation field name to <strong><em>Availability</em></strong> and tap <strong><em>OK</em></strong> to confirm.</p>
+<p><img src="../../images/acc_balance/12.png" style="width:350px"></p>
+<p>This is how your accumulated balance structure should look like.</p>
+<p><img src="../../images/acc_balance/13.png" style="width:350px"></p>
+<p>After the balance structure is created, we have to configure the settings by running the <strong><em>Configurator</em></strong>.</p>
+<p>8.Tap on the <strong><em>Plus</em></strong> button to add the data source to our balance.</p>
+<p><img src="../../images/acc_balance/14.png" style="width:350px"></p>
+<p>9.As data source we should specify <strong><em>In.Items</em></strong> nested table that contains the actual number of devices supplied to our storage for the entire period.</p>
+<p><img src="../../images/acc_balance/15.png" style="width:350px"></p>
+<p>10.Now, set the <strong><em>Product</em></strong> field from the <strong><em>In.Items</em></strong> nested table as the detail field value.</p>
+<p><img src="../../images/acc_balance/16.png" style="width:500px"></p>
+<p>11.Then specify the <strong><em>Quantity</em></strong> field as the aggregation field value.</p>
+<p><img src="../../images/acc_balance/17.png" style="width:500px"></p>
+<p>The active green <strong><em>plus</em></strong> sign to the left of the data source signals that the data from this source will be added to our balance.</p>
+<p>The next step is to add the <strong><em>Out</em></strong> table data to our balance that will be subtracted from the <strong><em>In</em></strong> table data.</p>
+<p>12.Tap on the <strong><em>plus</em></strong> icon once again to add the <strong><em>Out</em></strong> table data source.</p>
+<p><img src="../../images/acc_balance/18.png" style="width:500px"></p>
+<p>13.Set the <strong><em>Out.Items list</em></strong> table that lists the devices invoiced by the employees as the data source for <strong><em>Out</em></strong> table. Then specify the <strong><em>Product</em></strong> and <strong><em>Quantity</em></strong> fields accordingly.</p>
+<p><img src="../../images/acc_balance/19.png" style="width:350px"></p>
+<p>The active red <strong><em>minus</em></strong> sign to the left of the <strong><em>Out.Items list</em></strong> data source signals that the data from this source will be subtracted from our balance.</p>
+<p>Eventually, the configured balance should look like this.</p>
+<p><img src="../../images/acc_balance/20.png" style="width:500px"></p>
+<p>14.Tap on the check mark on the instrument panel to exit the configurator and save the accumulated balance.</p>
+<p><img src="../../images/acc_balance/21.png" style="width:350px"></p>
+<p>The figure below displays the newly created <strong><em>Stock</em></strong> balance that lists the devices from our storage and counts the number of devices left in stock. As seen, some of the devices are out of stock, which is proved by the <strong><em>0</em></strong> value in the <strong><em>Availability</em></strong> column. In some cases this information may look quite redundant and can be excluded by using the appropriate filter.</p>
+<p><img src="../../images/acc_balance/22.png" style="width:500px"></p>
+<p>15.To configure the filter tap on the <strong><em>Filter</em></strong> icon in the instrument panel.</p>
+<p><img src="../../images/acc_balance/23.png" style="width:350px"></p>
+<p>16.Set the filter parameters as specified below and tap <strong>OK</strong> to confirm the changes.</p>
+<p><img src="../../images/acc_balance/24.png" style="width:350px"></p>
+<p>As a result, our balance lists only those devices that are currently available in stock.</p>
+<p><img src="../../images/acc_balance/25.png" style="width:500px"></p>
+<p>The database used in this sample is available under the following link:
+<a href="http://perpetuumsoft.com/Support/downloads/mobidb/Electronics_shop_sample.zip">http://perpetuumsoft.com/Support/downloads/mobidb/Electronics_shop_sample.zip</a></p>
+
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

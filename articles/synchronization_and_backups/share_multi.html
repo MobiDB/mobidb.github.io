@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Multi-user access </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Multi-user access ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="https://mobidb.mobi">
+                <img id="logo" class="svg" src="../../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+              <h1 id="multi-user-access">Multi-user access</h1>
+              
+<p>This article describes how to share a database and connect to it from other devices.</p>
+<p><strong><em>Please note</em></strong>, the synchronization process is not automated and tapping the <strong>Synchronize</strong> button is required to initiate data sync.</p>
+<p>To share a database to be accessed by multiple users, you should follow the steps given below.</p>
+<p>1) To share a database with other user, open your Dropbox web user interface in any available web browser. Click on MobiDB directory to see the list of databases available for sharing. Select the database you would like to share and press <strong>Share</strong> button.</p>
+<p><img src="../../images/share_multi/1.png" style="width:800px"></p>
+<p>Let&#39;s presume we would like to share a database named <strong>Libros</strong>.</p>
+<p>2) After pressing the <strong>Share</strong> button, select <strong>Invite people to collaborate</strong> option.</p>
+<p><img src="../../images/share_multi/2.png" style="width:800px"></p>
+<p>3) Select the user you would like to share your database with and press <strong>Share folder</strong> button to proceed.</p>
+<p><img src="../../images/share_multi/3.png" style="width:800px"></p>
+<h2 id="connecting-to-a-shared-database">Connecting to a shared database</h2>
+<p>1) The <strong>Shared folder invitation</strong> will appear in Dropbox of the user you would like to share your database with.</p>
+<p><img src="../../images/share_multi/4.png" style="width:800px"></p>
+<p>2) The user should press <strong>Accept</strong> button to confirm.</p>
+<p><img src="../../images/share_multi/5.png" style="width:800px"></p>
+<p>3) The <strong>Libros</strong> database is now linked to the root folder of user&#39;s Dropbox file system.</p>
+<p><img src="../../images/share_multi/6.png" style="width:800px"></p>
+<p>4) To be able to access the database from user&#39;s device, it is necessary to move the database to the root MobiDB folder. Right click on the <strong>Libros</strong> database and select <strong>Move</strong>.</p>
+<p><img src="../../images/share_multi/7.png" style="width:800px"></p>
+<p>5)  Select MobiDB folder located in the root of your Dropbox file system and press <strong>Move</strong> to confirm. In case no <strong>MobiDB</strong> folder is available in the folders&#39; list, it is necessary to create such folder manually and add the <strong>Libros</strong> database to it.</p>
+<p><img src="../../images/share_multi/8.png" style="width:800px"></p>
+<p>6) After the <strong>Libros</strong> database is moved to root MobiDB folder it can be accessed from the user&#39;s device.</p>
+<p><img src="../../images/share_multi/9.png" style="width:800px"></p>
+<p>7) To connect to the shared database on user&#39;s device the following steps should be performed:</p>
+<ul>
+<li>Select <strong>Connect to MobiDB Dropbox base</strong> from the main menu options list</li>
+</ul>
+<p><img src="../../images/share_multi/10.png" style="width:500px"></p>
+<ul>
+<li>The shared <strong>Libros</strong> database is now visible in the list of available databases. Select the <strong>Libros</strong> database to proceed.</li>
+</ul>
+<p><img src="../../images/share_multi/11.png" style="width:500px"></p>
+<ul>
+<li>Specify the name for this database to be displayed on user&#39;s device.</li>
+</ul>
+<p><img src="../../images/share_multi/12.png" style="width:500px"></p>
+<ul>
+<li>The <strong>Libros</strong> database is now connected and can be used in cooperative mode.</li>
+</ul>
+<p><img src="../../images/share_multi/13.png" style="width:500px"></p>
+
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>PDF export </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="PDF export ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="https://mobidb.mobi">
+                <img id="logo" class="svg" src="../../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+              <h1 id="pdf-export">PDF export</h1>
+              
+<p>MobiDB is powerful not only because of designer, but because you can export forms and table to PDF.</p>
+<h2 id="android">Android</h2>
+<p>For android platform pdf export is pretty straightforward:
+Open table you wish to export and press ellipses button:</p>
+<p><img src="../../images/pdf/db.png" style="width:500px"></p>
+<p>Select <strong>Export</strong> option from the menu:</p>
+<p><img src="../../images/pdf/exportButton.png" style="width:500px"></p>
+<p>Then choose Pdf option in the list:</p>
+<p><img src="../../images/pdf/pdfOption.png" style="width:500px"></p>
+<p>You will see pdf export settings dialog:</p>
+<p><img src="../../images/pdf/options1.png" style="width:500px"></p>
+<p>The following settings are available:</p>
+<blockquote><ul>
+<li><p><strong><em><a href="#common-pdf-export-settings">Common PDF export settings</a></em></strong></p>
+</li>
+<li><p><strong><em>Font</em></strong> - font used by PDF export by default if not explicitly set in the designer.</p>
+</li>
+<li><p><strong><em>Action after export</em></strong> - allows to add additional export step after saving the file like <strong>Send</strong> (using apps which support sending files) or <strong>Open</strong> (to view exported file in apps which are able to display PDF files). It is also possible to just export file without additional step.</p>
+</li>
+</ul>
+</blockquote>
+<div class="NOTE"><h5>Note</h5><p>If you don&#39;t see text in the result PDF then default font you specified does not support characters you exported. You need to choose another default font or specify text field&#39;s font explicitly in the designer.</p>
+</div>
+<h2 id="windows">Windows</h2>
+<p>As for Windows there is no need to export PDF in order to get PDF. All you need to do is to print it. Windows 10 finally has default out of the box PDF Printer driver and is capable of creating PDF files.</p>
+<p>In order to export document to PDF open desired table and press ellipses button:</p>
+<p><img src="../../images/pdf/ellipses.png" style="width:800px"></p>
+<p>In the menu choose <strong>Print</strong> option:</p>
+<p><img src="../../images/pdf/print.png" style="width:800px"></p>
+<p>You&#39;ll see Print dialog:</p>
+<p><img src="../../images/pdf/printToPdf.png" style="width:800px"></p>
+<p>As you can see Microsoft Print to PDF driver is selected by default. If not - choose it.</p>
+<p>The following settings are available:</p>
+<blockquote><ul>
+<li><p><strong><em><a href="#common-pdf-export-settings">Common PDF export settings</a></em></strong>.</p>
+</li>
+<li><p><strong><em>Page range</em></strong> - physical page range to print.</p>
+</li>
+</ul>
+</blockquote>
+<p>Once you hit Print you will see Save dialog:</p>
+<p><img src="../../images/pdf/saveAs.png" style="width:800px"></p>
+<h2 id="common-pdf-export-settings">Common Pdf export settings</h2>
+<p>There are several pdf export settings which work the same way for both platforms Android and Windows:</p>
+<blockquote><ul>
+<li><p><strong><em>Page orientation</em></strong> – sets paper orientation portrait or landscape.</p>
+</li>
+<li><p><strong><em>Layout</em></strong> – allows to specify which template to use for export: table view or forms view</p>
+</li>
+<li><p><strong><em>Rows range</em></strong> – sets rows to export: All, Current record, Filtered records.</p>
+<blockquote><p><strong>All</strong> - ignore filter, export all records.<br><strong>Current record</strong> - export only one currently selected record.<br><strong>Filtered rows</strong> - If you have active filter it will be used to filter rows).</p>
+</blockquote>
+</li>
+<li><p><strong><em>Page size</em></strong> - paper size (<strong>A4</strong>, <strong>Letter</strong> and etc.).</p>
+</li>
+</ul>
+</blockquote>
+<p>As for <strong>layout</strong> property <strong>Cards</strong> layout is demonstrated below:</p>
+<p><img src="../../images/pdf/cardViewPdf.png" style="width:500px"></p>
+<p><strong>Table</strong> layout example is shown below:</p>
+<p><img src="../../images/pdf/tableViewPdf.png" style="width:500px"></p>
+
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

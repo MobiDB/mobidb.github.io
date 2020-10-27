@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Table relations set up </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Table relations set up ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="https://mobidb.mobi">
+                <img id="logo" class="svg" src="../../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+              <h1 id="table-relations-set-up">Table relations set up</h1>
+              
+<p>With MobiDB Database Designer, users can create complex databases with multiple table relations. This article will show how to create table relations and access fields from the related tables.</p>
+<p><u><strong>Task:</strong></u></p>
+<p>Let’s assume we have two tables: <strong><em>Clients</em></strong> and <strong><em>Invoices</em></strong>. When you generate invoices for your customers you want to select from the list of your customers and automatically fill in the following fields: <strong><em>billing address, contact name, email, phone</em></strong>.</p>
+<p><u><strong>How to:</strong></u></p>
+<p>Clients table contains the following fields: <strong><em>Company, Email, Contact, Phone, Billing address, Shipping address</em></strong>.</p>
+<p><img src="../../images/table_relations/1.png" style="width:500px">  </p>
+<p><strong><em>Figure1. Table view (phone)</em></strong></p>
+<p><img src="../../images/table_relations/2.png" style="width:250px">  </p>
+<p><strong><em>Figure 2. Table fields in the designer (phone)</em></strong></p>
+<p>We strongly recommend changing field names used in formulas to make them unique and descriptive, so that you are able to easily identify the field when writing expressions.</p>
+<p><img src="../../images/table_relations/3.png" style="width:250px">  </p>
+<p><strong><em>Figure 3. Changing field name to be used in formulas</em></strong></p>
+<p>We added a new table – <strong><em>Invoices</em></strong>. And we need to get access to the customers’ data from the <strong><em>Clients</em></strong> table. In the designer, we add a <strong><em>Table reference</em></strong> control to the form. On the phone, tap <img src="../../images/table_relations/plus.png" style="width:25x">    to proceed to the toolbox containing all available fields:</p>
+<p><img src="../../images/table_relations/4.png" style="width:250px">  </p>
+<p><strong><em>Figure 4. Adding fields from the toolbox (phone)</em></strong></p>
+<p>Tap settings icon <img src="../../images/table_relations/edit.png" style="width:25px">    to get access to the field options. Set field name, caption, select a table you want to link to, then select a field from that table you want to link to. Tap <strong><em>Save</em></strong>.</p>
+<p>We have just created table relation, so you will be able to select values from the related table in the dropdown list.</p>
+<p><img src="../../images/table_relations/5.png" style="width:250px"></p>
+<p><strong><em>Figure 5. Setting table relations</em></strong></p>
+<p>Now we need to get access to other fields from the <strong><em>Clients</em></strong> table and fill in the values automatically upon selection of the company name. To do that, go back to the designer, tap the <strong>Add</strong> button <img src="../../images/table_relations/plus.png" style="width:25px">   (on the phone) or just scroll the toolbox panel on your tablet to view all fields available from the related table – <strong><em>Related fields</em></strong>.</p>
+<p><img src="../../images/table_relations/6.png" style="width:250px">  </p>
+<p><strong><em>Figure 6. Fields available from the related table (phone)</em></strong></p>
+<p>Just tap the necessary field (or drag and drop it on the tablet). As a result, you will add the <strong><em>Calculable</em></strong> field with the pre-set expression that will get data from the related table field.</p>
+<p><img src="../../images/table_relations/7.png" style="width:250px"></p>
+<p><strong><em>Figure 7. Options of the related field</em></strong></p>
+<p>In same way add all required fields: <strong><em>Billing address, Contact name, Phone, Email</em></strong>. Tap <strong><em>Ok</em></strong> button to save changes and see the result.</p>
+<p>Empty fields when no company is selected:</p>
+<p><img src="../../images/table_relations/8.png" style="width:250px">  </p>
+<p><strong><em>Figure 8. Empty fields when no company is selected</em></strong></p>
+<p>The card is filled in automatically when the company name is selected:</p>
+<p><img src="../../images/table_relations/9.png" style="width:250px">  </p>
+<p><strong><em>Figure 9. Automatically filled in fields upon selection of the company name</em></strong></p>
+<p>It’s also possible to proceed to the parent table by tapping the <img src="../../images/table_relations/eye.png" style="width:25px">   icon and edit the necessary information. When you get back to the <strong><em>Invoices</em></strong> records, they will be updated to display the most recent data.</p>
+<p>You can link to any field types including <strong><em>Pictures</em></strong>.</p>
+<p>So, you see how it is easy to create relations between the tables. Just add the <strong><em>Table reference</em></strong> field and in a couple of taps you get access to the required data. Users don’t need to have any programming experience and write any expressions at all. Everything is done in an intuitive and user-friendly manner.</p>
+
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
