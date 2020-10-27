@@ -1,13 +1,10 @@
 # Licensing and registration #
 
-MobiDB Database uses web-based account management service to authorize users, get free 7-days trial and manage license packs.
+MobiDB Database uses web-based account management service to authorize users, get free 14-days trial and manage license packs.
 
-The following one-time payment perpetual subscription types are currently available:
+MobiDB uses yearly subsriptions. Moreover license packs with **10** and **100** users are available. You can find pricing and features details [here](https://mobidb.mobi#pricing). 
 
-<img src="../../images/licensing/editions.png"  style="width:600px"/>
-<img src="../../images/licensing/edition_feature.png"  style="width:600px"/>
-
-Moreover license packs with **10** and **100** users are available. You can find pricing details [here](https://mobidb.mobi#pricing). Managing license packs is described [here](./grant_license.md).
+Managing license packs is described [here](./grant_license.md).
 
 All data transferred between the remote server and MobiDB client is protected with https connection (SSL certificate).
 
