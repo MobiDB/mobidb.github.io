@@ -8,6 +8,7 @@ Sign-in experience is a little bit different on different platforms. You can fin
 ## iOS ##
 
 Open MobiDB app and tap on user button:
+
 <img src="../../images/login/ios_main_page.png" style="width:320px"/>
 
 Choose Sign-in:
