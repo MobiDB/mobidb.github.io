@@ -9,15 +9,15 @@ Sign-in experience is a little bit different on different platforms. You can fin
 
 Open MobiDB app and tap on user button:
 
-<img src="../../images/login/ios_main_page.png" style="width:320px"/>
+<img src="../../images/login/ios_main_page.png" class="iphoneimg"/>
 
 Choose Sign-in:
 
-<img src="../../images/login/ios_sign_in.png" style="width:320px"/>   
+<img src="../../images/login/ios_sign_in.png" class="iphoneimg"/>   
 
 Sign in using available options:
    
-<img src="../../images/login/ios_sign_in_options.png" style="width:320px"/>            
+<img src="../../images/login/ios_sign_in_options.png" class="iphoneimg"/>            
 
 ## Android ##
 
