@@ -3,7 +3,20 @@
 > [!NOTE]
 > Google and Microsoft login use OAuth authorization and in that case we do not store and don't have access to your password in our system. We just redirect you to their login forms and they later confirm that you are logged in and give us your email address and your name which are used on our side to track customer's license.
 
-Sign-in experience is a little bit different on windows 10 and on android. You can find description for both cases below:
+Sign-in experience is a little bit different on different platforms. You can find description for both cases below:
+
+## iOS ##
+
+Open MobiDB app and tap on user button:
+<img src="../../images/login/ios_main_page.png" style="width:320px"/>
+
+Choose Sign-in:
+
+<img src="../../images/login/ios_sign_in.png" style="width:320px"/>   
+
+Sign in using available options:
+   
+<img src="../../images/login/ios_sign_in_options.png" style="width:320px"/>            
 
 ## Android ##
 
