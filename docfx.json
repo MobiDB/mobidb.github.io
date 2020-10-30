@@ -41,7 +41,8 @@
       {
         "files": [
           "images/**",
-          "examples/**"
+          "examples/**",
+          "CNAME"
         ],
         "exclude": [
           "obj/**",
