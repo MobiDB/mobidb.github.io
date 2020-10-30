@@ -27,9 +27,10 @@
       {
         "files": [
           "articles/**.md",
-          "articles/**/toc.yml",
+          "articles/**/toc.yml",          
           "toc.yml",
-          "*.md"
+          "*.md",
+          "CNAME"
         ],
         "exclude": [
           "obj/**",
