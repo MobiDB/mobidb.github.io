@@ -68,11 +68,17 @@
             <article class="content wrap" id="_content" data-uid="">
               <h1 id="how-to-calculate-age-in-mobidb-database">How to calculate age in MobiDB database</h1>
               
-<p>Based on the following <a href="https://stackoverflow.com/a/1404/1099716">link</a> you need to add <a href="../field_types/calc_exp.html">calculable expression</a> in the designer.</p>
+<p>Based on the following <a href="https://stackoverflow.com/a/1404/1099716">link</a> you need to add <a href="../field_types/calc_exp.html">calculable expression</a> in the designer:</p>
+<p><img src="../../images/how_to/age/open_expressions.png" style="width:800px"></p>
 <p>Add the following expression called <code>diff</code>:</p>
 <p><code>getyear(getnow())-getyear(birthday)</code></p>
+<p><img src="../../images/how_to/age/expression.png" style="width:800px"></p>
 <p>And add the following expression to the calculable field:</p>
 <p><code>if (birthday&gt;AddYears(getdate(getnow()),-diff),diff-1,diff)</code></p>
+<p><img src="../../images/how_to/age/calculable.png" style="width:800px"></p>
+<p><img src="../../images/how_to/age/calculable_expression.png" style="width:800px"></p>
+<p>Result:</p>
+<p><img src="../../images/how_to/age/result.png" style="width:800px"></p>
 <p>Example can be found <a href="../../examples/age.pdmd">here</a>.</p>
 
             </article>

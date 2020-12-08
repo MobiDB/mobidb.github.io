@@ -197,7 +197,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/howto/calculate_age.html",
-          "hash": "R9GnUbbx+XXd3n+tPfWazA=="
+          "hash": "xsZM1AWAjAZL0lO81voGdA=="
         }
       },
       "is_incremental": false,
@@ -2954,6 +2954,61 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/how_to/age/calculable.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/how_to/age/calculable.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/how_to/age/calculable_expression.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/how_to/age/calculable_expression.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/how_to/age/expression.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/how_to/age/expression.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/how_to/age/open_expressions.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/how_to/age/open_expressions.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/how_to/age/result.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/how_to/age/result.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/howto_sync_issue/1.png",
       "output": {
         "resource": {
@@ -4275,17 +4330,17 @@
         "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 36,
-          "skipped_file_count": 0
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 36,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
