@@ -48,9 +48,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "articles/field_types/basic_types.md",
       "output": {
@@ -893,6 +890,303 @@
       "output": {
         "resource": {
           "relative_path": "images/backup/specify_db_name.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/basic_types/address.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/basic_types/address.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/basic_types/attached_file.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/basic_types/attached_file.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/basic_types/bool.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/basic_types/bool.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/basic_types/calculable.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/basic_types/calculable.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/basic_types/currency.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/basic_types/currency.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/basic_types/date.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/basic_types/date.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/basic_types/dropdown_list.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/basic_types/dropdown_list.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/basic_types/email.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/basic_types/email.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/basic_types/float.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/basic_types/float.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/basic_types/hyperlink.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/basic_types/hyperlink.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/basic_types/integer.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/basic_types/integer.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/basic_types/label.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/basic_types/label.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/basic_types/location-gps.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/basic_types/location-gps.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/basic_types/location-map.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/basic_types/location-map.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/basic_types/location.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/basic_types/location.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/basic_types/nested_table.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/basic_types/nested_table.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/basic_types/nested_table_edit.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/basic_types/nested_table_edit.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/basic_types/phone.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/basic_types/phone.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/basic_types/picture-camera.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/basic_types/picture-camera.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/basic_types/picture-delete.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/basic_types/picture-delete.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/basic_types/picture-gallery.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/basic_types/picture-gallery.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/basic_types/picture-save-as.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/basic_types/picture-save-as.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/basic_types/picture.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/basic_types/picture.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/basic_types/rating.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/basic_types/rating.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/basic_types/table_reference.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/basic_types/table_reference.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/basic_types/text.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/basic_types/text.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/basic_types/time.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/basic_types/time.png"
         }
       },
       "is_incremental": false,
@@ -3981,13 +4275,6 @@
         "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
@@ -3997,6 +4284,13 @@
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
           "skipped_file_count": 0
