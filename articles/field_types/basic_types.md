@@ -131,7 +131,7 @@ The following Time properties are available:
 
 <img src="../../images/basic_types/picture.png"  style="width:180px"/>
 
-Picture is used to add and display images in a card. Picture can be selected from the gallery or cloud storage <img src="../../images/basic_types/Picture-Gallery.png"  style="width:30px"/> , or taken by the device camera <img src="../../images/basic_types/Picture-camera.png"  style="width:30px"/> . It’s also possible to delete the image from the card <img src="../../images/basic_types/Picture-delete.png"  style="width:30px"/> or save it outside of the app for further use <img src="../../images/basic_types/Picture-Save-As.png"  style="width:30px"/>
+Picture is used to add and display images in a card. Picture can be selected from the gallery or cloud storage <img src="../../images/basic_types/picture-gallery.png"  style="width:30px"/> , or taken by the device camera <img src="../../images/basic_types/picture-camera.png"  style="width:30px"/> . It’s also possible to delete the image from the card <img src="../../images/basic_types/picture-delete.png"  style="width:30px"/> or save it outside of the app for further use <img src="../../images/basic_types/picture-save-as.png"  style="width:30px"/>
 
 The following Picture properties are available:
 
@@ -315,8 +315,8 @@ The following Calculable properties are available:
 
 <img src="../../images/basic_types/location.png"  style="width:180px"/>
 
-Location is used to enter and display coordinates of a place. Coordinates can be entered manually in the following format: *53.389175;83.745387*, or you can get your current coordinates with GPS and add them to a card <img src="../../images/basic_types/Location-GPS.png"  style="width:30px"/>
-Users are also able to view the place specified by the entered coordinates on the map <img src="../../images/basic_types/Location-Map.png"  style="width:30px"/>
+Location is used to enter and display coordinates of a place. Coordinates can be entered manually in the following format: *53.389175;83.745387*, or you can get your current coordinates with GPS and add them to a card <img src="../../images/basic_types/location-gps.png"  style="width:30px"/>
+Users are also able to view the place specified by the entered coordinates on the map <img src="../../images/basic_types/location-map.png"  style="width:30px"/>
 
 The following Location properties are available:
 
@@ -328,7 +328,7 @@ The following Location properties are available:
 
 ## Nested table ##
 
-<img src="../../images/basic_types/Nested_Table.png"  style="width:180px"/>
+<img src="../../images/basic_types/nested_table.png"  style="width:180px"/>
 
 Nested table is used to insert a child table into the card. This is very convenient for storing additional data that is related to a definite entry but adding it to the card would overload it and make unreadable.
 
