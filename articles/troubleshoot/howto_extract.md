@@ -5,7 +5,8 @@ Sometimes, the support team may ask you to extract the MobiDB database files in 
 Please follow the steps below to get the .db files extracted on your device:
 
 1) Download the Databases Extractor tool using the link below:
-http://perpetuumsoft.com/Support/downloads/Tools/Database_extractor_new.zip
+
+https://mobidb.mobi/downloads/databaseextractor.apk
 
 <img src="../../images/extractor/1.png"  style="width:500px"/>
 
