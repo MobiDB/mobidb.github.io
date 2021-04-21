@@ -1,5 +1,5 @@
 
-# CSV Import (import data from Filemaker, MS Access, MS Excel and etc.) #
+# CSV Import #
 
 CSV import allows to import data from Filemaker, Microsoft Access, Excel spreadsheet and others products which support csv export.
 
